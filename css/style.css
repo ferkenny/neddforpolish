@@ -1,0 +1,715 @@
+*
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 0.94vw;
+}
+
+body
+{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    color: #D83B09;
+    font-size: 1rem;
+}
+
+a
+{
+    display: inline-block;
+}
+
+section
+{
+    position: relative;
+}
+
+
+.cabecera
+{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #191a1c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.cabecera .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecera .link-logo
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cabecera .link-logo .logo
+{
+    width: 10rem;
+    height: auto;
+}
+
+.cabecera .menu
+{
+    display: flex;
+    align-items: center;
+    /*position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #191a1c; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-direction: column;*/
+}
+
+
+.cabecera .menu a
+{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    color: #D83B09;
+    font-size: 0.94rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.13rem;
+    transition: all 0.5s 0.5s ease;   
+}
+
+.cabecera .menu a:hover
+{
+   color: #ffff; 
+}
+
+.cabecera .menu a:first-child
+{
+    margin-left: 0;
+}
+
+.carita
+{
+    background: transparent;
+    width: 3.33rem;
+    height: 3.33rem;
+}
+
+.cabecera .hamb
+{
+    color: #D83B09;
+    font-size: 2.66rem;
+    display: none;
+}
+
+
+.container
+{
+    width: 85.74%;
+    padding: 0 1rem;
+    margin: 0 auto;    
+}
+
+.container-full
+{
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.fila
+{
+    margin-left: -1rem;
+    margin-right: -1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fila.fila-centrada
+{
+    justify-content: center;
+}
+
+.columna
+{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.columna-100
+{
+    width: 100%;
+}
+
+.columna-50
+{
+    width: 50%;
+}
+
+.columna-41
+{
+    width: 41.66%;
+}
+
+.columna-33
+{
+    width: 33.33%;
+}
+
+.columna-25
+{
+    width: 25%;
+}
+
+.columna-16
+{
+    width: 16.66%;
+}
+
+.columna-8
+{
+    width: 8.33%;
+}
+
+.orden
+{
+    order: 2;
+}
+
+.sin-padding
+{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.contenedor-cuadrado
+{
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: #782b52;
+    opacity: 0.75;
+    filter: grayscale(50%);
+    cursor: pointer;
+}
+
+.contenedor-cuadrado .contenido-cuadrado
+{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding-right: 30%;
+    padding-left: 30%;
+    top: -100%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+.contenedor-cuadrado:hover .contenido-cuadrado
+{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.contenedor-cuadrado img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.5s ease;   
+}
+
+.contenedor-cuadrado:hover img
+{
+    transform: scale(1.5);
+   opacity: 0.75;
+   filter: grayscale(1);   
+}
+
+.contenedor-cuadrado video
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.5s ease;
+}
+
+.contenedor-cuadrado:hover video
+{
+    transform: scale(1.2); /*rotate(30deg); rotacion para las imagenes y vedeos*/
+    opacity: 0.75;
+   filter: grayscale(1);   
+}
+
+.seccion
+{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.centrar-texto
+{
+    text-align: center;
+}
+
+.inclinar--texto
+{
+    font-style: italic;
+}
+
+.video-fondo
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+    filter: grayscale(1);
+    opacity: 0.8;
+}
+
+.justificar-texto
+{
+    text-align: justify;
+}
+
+.importante
+{
+    font-style: italic;
+}
+
+.titulos
+{
+    margin-top: 0;
+    margin-bottom: 2.66rem;
+    text-align: center;
+    font-size: 2.66rem;
+    text-shadow: 0.13rem 0.2rem 0.53rem #0c0b0bb0;
+}
+
+.btn
+{
+    padding: 0.33rem 0.66rem;
+    font-size: 1.066rem;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s ease;   
+}
+
+.btn.boton-transparente
+{
+    background-color: transparent;
+    border: 0.13rem solid #782b52;
+    color: #782b52;
+    border-bottom-right-radius: 0.66rem;
+    border-bottom-left-radius: 0.66rem;
+}
+
+.btn.boton-transparente:hover
+{
+    background-color: #D83B09;
+    /*border: 0.13rem solid #ffff;*/
+    color: #ffff;
+}
+/* tipos de posicionamientos
+
+        position:
+              -static (es el por defecto)
+ --------------------------------------             
+              -reltive
+              -absoluto
+              -fixed
+              -sticky (investigar)
+              
+5 propiedades adicionales: 
+                      1 top
+                      2 buttom
+                      3 left
+                      4 right
+                      5 z-index
+*/
+#banner
+{
+    background-color: #000;
+    height: 100vh;
+}
+
+#banner .banner-home
+{
+    width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0.85;
+    object-fit: cover;
+}
+
+#banner .container
+{
+    position: absolute;
+    top: 63.5%;
+    left: 0;
+    right: 0;   
+}
+
+#banner .container h1
+{
+    font-size: 2.66rem;
+    color: white;
+    margin: 0;
+}
+
+#banner .container p
+{
+    font-size: 1.33rem;
+    color: white;
+    margin-top: 0.33rem;
+    margin-bottom: 0.46rem;
+    color: #fff;
+}
+
+
+
+#nosotros
+{    
+    height: 100vh;
+    padding-top: 19.26rem;
+    padding-bottom: 4rem;
+    background-image: linear-gradient(90deg,#f7f7f7ba,#ededed59), url(../img/panalnuevo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+#trabajos
+{
+   /* background-image: url("../img/auto.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+  */
+}
+
+.columna.columna-50.contenedor-anim
+{    
+    display: flex;
+    align-items: center;  
+}
+
+.contenedor-anim
+{
+    margin-left: 2.66rem;
+    margin-right: 2.66rem;
+}
+
+.alinear
+{
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;   
+}
+
+.alinear p
+{
+    margin-right: 3.33rem;
+}
+
+.anim
+{
+  background-color: transparent; 
+  width: 2.66rem; 
+  height: 2.66rem;
+}
+
+#servicios
+{
+}
+
+#servicios .contenedor-serv
+{
+    text-align: center;
+    background-color: #f2ebde;
+    padding: 2rem;
+    height: 100%;
+    border-radius: 1rem;
+    transition: all 4s ease;
+}
+
+#servicios .contenedor-serv:hover
+{
+   box-shadow: 4px 7px 20px 1px #191a1ca8;
+}
+
+.contenedor-serv p 
+{
+    color: #191a1c;
+}
+
+.anim-serv
+{
+    display: inline-block;
+    align-items: center;
+    background: transparent;  speed: 0.6;  
+    width: 70px; 
+    height: 70px;  
+}
+
+
+#testimonios
+{
+   position: relative;
+   background-color: #838689;
+   color: #fff;
+   line-height: 1.5;
+}
+
+#testimonios p
+{
+   margin-bottom: 0;
+}
+
+::selection
+{
+    background-color: #ffff;
+}
+
+#testimonios p::first-letter
+{
+   font-size: 2rem;
+   font-weight: 600;
+}
+
+
+#testimonios .trama-video
+{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   z-index: 2;
+   top: 0;
+   left: 0;
+   background-image: linear-gradient(to top right, #fa69003b, #8386898c);
+}
+
+#testimonios .container
+{  
+    z-index: 3;
+    position: relative;
+}
+
+@media (min-width: 1200px)
+{
+    
+}
+
+
+
+@media (max-width: 1199px)
+{
+    .container
+    {
+        width: 960px;    
+    }
+}
+
+@media (max-width: 991px)
+{
+    .container
+    {
+        width: 750px;    
+    }
+}
+
+@media (max-width: 767px)
+{
+
+    html
+    {
+         font-size: 4vw;
+    }
+
+    .container
+    {
+        width: 100%;    
+    }
+
+    .columna-mb-100
+    {
+        width: 100%;
+    }
+
+    .columna-mb-50
+    {
+        width: 50%;
+    }
+
+    .columna-mb-41
+    {
+        width: 41.66%;
+    }
+
+    .columna-mb-33
+    {
+        width: 33.33%;
+    }
+
+    .columna-mb-25
+    {
+        width: 25%;
+    }
+
+    .columna-mb-16
+    {
+        width: 16.66%;
+    }
+
+    .columna-mb-8
+    {
+        width: 8.33%;
+    }
+
+    .orden
+    {
+        order: 0;
+    }
+
+    .titulos
+    {
+        font-size: 3.33rem;
+    }
+
+    .anim
+    {
+      background-color: transparent; 
+      width: 1rem; 
+      height: 1rem;
+    }
+
+    .cabecera .link-logo .logo
+    {
+        width: 8.66rem;
+        height: auto;
+    }
+
+    .cabecera .hamb
+    {
+        display: block;
+    }
+
+    .cabecera .menu
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #191a1c; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
+        flex-direction: column;
+        display: none;
+    }
+
+    #servicios .contenedor-serv
+    {
+        height: auto;
+        margin-bottom: 1.066rem;
+    }
+
+    .seccion
+    {
+        padding-bottom: 2.66rem;
+        padding-top: 2.66rem;
+    }
+
+    #banner
+    {
+        height: 100vh;
+    }
+
+    #banner .container h1
+    {
+        font-size: 2.66rem;
+    }
+
+    #banner .container
+    {
+        top: 35%;
+    }
+
+    .btn.boton-transparente
+    {
+        border: 0.13rem solid #673ab7;
+        color: #ffff;
+    }
+
+    .contenedor-anim
+    {
+        margin-left: 2.66rem;
+        margin-right: 2.66rem;
+    }
+
+    .alinear
+    {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;   
+    }
+
+    /*.btn.boton-transparente
+    {
+        display: none;
+    }*/
+
+    <script  src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+}
+
+/*
+@media (min-width: 768px)
+{
+    {
+        background-color: red;
+    }
+
+}
+
+@media (min-width: 992px)
+{
+
+     {
+        background-color: yellow;
+    }
+
+}
+
+@media (min-width: 1200px)
+{
+     {
+        background-color: white;
+    }
+}
+*/
+
