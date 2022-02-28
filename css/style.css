@@ -217,7 +217,7 @@ section
 
 .contenedor-cuadrado:hover .contenido-cuadrado
 {
-    top: 50%;
+    top: 50%;                   
     transform: translateY(-50%);
 }
 
@@ -331,6 +331,8 @@ section
     background-color: #D83B09;
     /*border: 0.13rem solid #ffff;*/
     color: #ffff;
+    /*transform: skew(30deg);*/
+    transform: rotateX(30deg) perspective(1rem);
 }
 /* tipos de posicionamientos
 
